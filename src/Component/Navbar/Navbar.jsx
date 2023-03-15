@@ -1,4 +1,5 @@
 import React from "react";
+import "../component.css";
 import TRAFALGAR from "../../Assets/img/Trafalgar.png";
 
 function Navbar() {
@@ -7,7 +8,7 @@ function Navbar() {
       <div className="">
         <img className="h-13" src={TRAFALGAR} alt="" />
       </div>
-      <div className="w-[50%] text-[#7D7987] font-normal text-[18px] pt-2 flex justify-between">
+      <div className="w-[50%] text-[#7D7987] cursor-pointer font-normal text-[18px] pt-2 flex justify-between">
         <p className="hover:text-[#1F1534] hover:font-medium text-[#1F1534] font-medium">
           Home
         </p>
