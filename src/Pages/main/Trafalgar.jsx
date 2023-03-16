@@ -5,12 +5,15 @@ import ELEMENT2 from "../../Assets/pic/element2.png";
 import ELEMENT3 from "../../Assets/pic/element3.png";
 import ELEMENT4 from "../../Assets/pic/element4.png";
 import ELEMENT5 from "../../Assets/pic/element5.png";
+import ELEMENT6 from "../../Assets/pic/element6.png";
+import SLIDER from "../../Assets/pic/slider.png";
 import Consultbtn from "../../Component/Button/Consultbtn";
 import Learnbtn from "../../Component/Button/Learnbtn";
 import HEADER from "../../Assets/img/header1.png";
 import HEADER2 from "../../Assets/img/header2.png";
 import HEADER3 from "../../Assets/img/header3.png";
 import VECTOR from "../../Assets/pic/Vector.png";
+import VECTOR2 from "../../Assets/pic/Vector2.png";
 import MEDICINE from "../../Assets/img/Medicine.png";
 import CONTACTS from "../../Assets/img/Contact.png";
 import SEARCH from "../../Assets/img/Search.png";
@@ -200,8 +203,12 @@ function Trafalgar() {
                     <img className="" src={EDWARD} alt="" />
                   </div>
                   <div className="w-[60%] text-left mt-10">
-                    <h1 className="text-[21px] font-semibold text-white">Edward Newgate</h1>
-                    <p className="text-lg font-normal text-white">Founder Circle</p>
+                    <h1 className="text-[21px] font-semibold text-white">
+                      Edward Newgate
+                    </h1>
+                    <p className="text-lg font-normal text-white">
+                      Founder Circle
+                    </p>
                   </div>
                   <div className="w-[100%] text-left mt-4">
                     <p className="text-[19px] font-normal text-white">
@@ -211,6 +218,25 @@ function Trafalgar() {
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="w-full cursor-pointer">
+              <img className="ml-auto mr-auto mt-9" src={SLIDER} alt="" />
+            </div>
+          </div>
+          <div className="w-full absolute">
+            <img className="pl-[7rem] mt-[9rem]" src={ELEMENT6} alt="" />
+          </div>
+          <div className="w-full absolute">
+            <img className="ml-auto mt-[12rem]" src={VECTOR2} alt="" />
+          </div>
+          <div className="w-full mt-[11rem]">
+            <div className="w-full text-center">
+              <div className="text-4xl font-semibold">
+                <h1>Check out our latest article</h1>
+              </div>
+              <div className="w-[7%] mr-auto ml-auto mt-9">
+                <Underline />
               </div>
             </div>
           </div>
