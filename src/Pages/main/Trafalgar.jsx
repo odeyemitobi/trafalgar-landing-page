@@ -9,6 +9,7 @@ import ELEMENT6 from "../../Assets/pic/element6.png";
 import SLIDER from "../../Assets/pic/slider.png";
 import Consultbtn from "../../Component/Button/Consultbtn";
 import Learnbtn from "../../Component/Button/Learnbtn";
+import Viewbtn from "../../Component/Button/Viewbtn";
 import HEADER from "../../Assets/img/header1.png";
 import HEADER2 from "../../Assets/img/header2.png";
 import HEADER3 from "../../Assets/img/header3.png";
@@ -24,6 +25,10 @@ import Underline from "../../Component/Button/Underline";
 import Downloadbtn from "./../../Component/Button/Downloadbtn";
 import Whiteline from "../../Component/Button/Whiteline";
 import EDWARD from "../../Assets/img/Edward.png";
+import DISEASE from "../../Assets/img/Diseaselab.png";
+import HERBAL from "../../Assets/img/Herballab.png";
+import SKIN from "../../Assets/img/Healthyskin.png";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 function Trafalgar() {
   return (
@@ -225,12 +230,12 @@ function Trafalgar() {
             </div>
           </div>
           <div className="w-full absolute">
-            <img className="pl-[7rem] mt-[9rem]" src={ELEMENT6} alt="" />
+            <img className="pl-[8rem] mt-[16rem]" src={ELEMENT6} alt="" />
           </div>
           <div className="w-full absolute">
-            <img className="ml-auto mt-[12rem]" src={VECTOR2} alt="" />
+            <img className="ml-auto h-[26rem] mt-[16rem]" src={VECTOR2} alt="" />
           </div>
-          <div className="w-full mt-[11rem]">
+          <div className="w-full px-[11rem] mt-[11rem] relative">
             <div className="w-full text-center">
               <div className="text-4xl font-semibold">
                 <h1>Check out our latest article</h1>
@@ -239,6 +244,86 @@ function Trafalgar() {
                 <Underline />
               </div>
             </div>
+            <div className="w-full mt-[4rem] mb-9 flex justify-between">
+              <div className="w-[30%] cursor-pointer text-left rounded-2xl bg-[#fff] shadow-xl hover:shadow-2xl">
+                <img
+                  className="w-[100%] rounded-t-xl bg-center bg-cover"
+                  src={DISEASE}
+                  alt=""
+                />
+                <div className="px-6">
+                  <h1 className=" text-xl font-semibold mt-3">
+                    Disease detection, check up in the laboratory
+                  </h1>
+                  <p className="text-[15px] mb-5 mt-3">
+                    In this case, the role of the health laboratory is very
+                    important to do a disease detection...
+                  </p>
+                  <div className="text-[#4089ED] flex mb-4">
+                    <p className="text-[#4089ED] font-medium text-base">
+                      Read more
+                    </p>
+                    <div className="mt-[7px] pl-2">
+                      <HiArrowNarrowRight />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[30%] cursor-pointer text-left rounded-2xl bg-[#fff] shadow-xl hover:shadow-2xl">
+                <img
+                  className="w-[100%] rounded-t-xl bg-center bg-cover"
+                  src={HERBAL}
+                  alt=""
+                />
+                <div className="px-6 pb-5">
+                  <h1 className=" text-[19px] font-semibold mt-3">
+                    Herbal medicines that are safe for consumption
+                  </h1>
+                  <p className="text-[15px] mb-5 mt-3">
+                    Herbal medicine is very widely used at this time because of
+                    its very good for your health...
+                  </p>
+                  <div className="text-[#4089ED] flex mb-4">
+                    <p className="text-[#4089ED] font-medium text-base">
+                      Read more
+                    </p>
+                    <div className="mt-[7px] pl-2">
+                      <HiArrowNarrowRight />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[30%] cursor-pointer text-left rounded-2xl bg-[#fff] shadow-xl hover:shadow-2xl">
+                <img
+                  className="w-[100%] rounded-t-xl bg-center bg-cover"
+                  src={SKIN}
+                  alt=""
+                />
+                <div className="px-6">
+                  <h1 className=" text-xl font-semibold mt-3">
+                    Natural care for healthy facial skin
+                  </h1>
+                  <p className="text-[15px] mb-5 mt-3">
+                    In this case, the role of the health laboratory is very
+                    important to do a disease detection...
+                  </p>
+                  <div className="text-[#4089ED] flex mb-4">
+                    <p className="text-[#4089ED] font-medium text-base">
+                      Read more
+                    </p>
+                    <div className="mt-[7px] pl-2">
+                      <HiArrowNarrowRight />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="text-center mb-5">
+              <Viewbtn/>
+            </div>
+          </div>
+          <div className="ed">
+            <div>p</div>
           </div>
         </div>
       </div>
