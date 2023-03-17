@@ -1,11 +1,15 @@
 import React from "react";
 import Mainlayout from "../../layouts/Mainlayout";
+import ELIPSE from "../../Assets/img/Ellipse.png";
+import TEE from "../../Assets/img/T.png";
 import ELEMENT from "../../Assets/pic/element.png";
 import ELEMENT2 from "../../Assets/pic/element2.png";
 import ELEMENT3 from "../../Assets/pic/element3.png";
 import ELEMENT4 from "../../Assets/pic/element4.png";
 import ELEMENT5 from "../../Assets/pic/element5.png";
 import ELEMENT6 from "../../Assets/pic/element6.png";
+import ELEMENT7 from "../../Assets/pic/element7.png";
+import ELEMENT8 from "../../Assets/pic/element8.png";
 import SLIDER from "../../Assets/pic/slider.png";
 import Consultbtn from "../../Component/Button/Consultbtn";
 import Learnbtn from "../../Component/Button/Learnbtn";
@@ -233,7 +237,11 @@ function Trafalgar() {
             <img className="pl-[8rem] mt-[16rem]" src={ELEMENT6} alt="" />
           </div>
           <div className="w-full absolute">
-            <img className="ml-auto h-[26rem] mt-[16rem]" src={VECTOR2} alt="" />
+            <img
+              className="ml-auto h-[26rem] mt-[16rem]"
+              src={VECTOR2}
+              alt=""
+            />
           </div>
           <div className="w-full px-[11rem] mt-[11rem] relative">
             <div className="w-full text-center">
@@ -319,11 +327,83 @@ function Trafalgar() {
               </div>
             </div>
             <div className="text-center mb-5">
-              <Viewbtn/>
+              <Viewbtn />
             </div>
           </div>
-          <div className="ed">
-            <div>p</div>
+          <div className="w-full absolute mt-[5rem] px-[3rem]">
+            <img className="ml-auto" src={ELEMENT7} alt="" />
+          </div>
+          <div className="w-full mt-[11rem] relative ed">
+            <div className="w-full px-[9rem] pt-[5rem] justify-between flex">
+              <div className=" w-[50%]">
+                <div className="w-full">
+                  <div className="w-full flex">
+                    <div className="">
+                      <div className=" absolute">
+                        <img src={ELIPSE} alt="" />
+                      </div>
+                      <div className="relative">
+                        <img className="mt-3 px-3" src={TEE} alt="" />
+                      </div>
+                    </div>
+                    <div className="pl-3 mt-1 text-white font-semibold text-2xl">
+                      <h1>Trafalgar</h1>
+                    </div>
+                  </div>
+                  <div className="w-full mt-5">
+                    <div className="w-[67%]">
+                      <p className="text-white text-[14px]">
+                        Trafalgar provides progressive, and affordable
+                        healthcare, accessible on mobile and online for everyone
+                      </p>
+                    </div>
+                    <div className="mt-5">
+                      <p className="text-white text-xs">
+                        ©Trafalgar PTY LTD 2020. All rights reserved
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[50%] flex justify-between">
+                <div className="w-full">
+                  <div className="w-full text-white">
+                    <h1 className="font-semibold">Company</h1>
+                    <div className="mt-5 text-sm leading-8">
+                      <p className="text-white">About</p>
+                      <p className="text-white">Testimonials</p>
+                      <p className="text-white">Find a doctor</p>
+                      <p className="text-white">Apps</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full">
+                  <div className="w-full text-white">
+                    <h1 className="font-semibold">Region</h1>
+                    <div className="mt-5 text-sm leading-8">
+                      <p className="text-white">Indonesia</p>
+                      <p className="text-white">Singapore</p>
+                      <p className="text-white">Hongkong</p>
+                      <p className="text-white">Canada</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full">
+                  <div className="w-full text-white">
+                    <h1 className="font-semibold">Help</h1>
+                    <div className="mt-5 text-sm leading-8">
+                      <p className="text-white">Help center</p>
+                      <p className="text-white">Contact support</p>
+                      <p className="text-white">Instructions</p>
+                      <p className="text-white">How it works</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-7">
+              <img className="h-[4rem]" src={ELEMENT8} alt="" />
+            </div>
           </div>
         </div>
       </div>
