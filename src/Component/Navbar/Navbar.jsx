@@ -5,7 +5,7 @@ import TRAFALGAR from "../../Assets/img/Trafalgar.png";
 function Navbar() {
   let Link1 = [{ name: "Home", link: "/" }];
 
-  let Links = [
+  let Link2 = [
     { name: "Find a doctor", link: "/" },
     { name: "Apps", link: "/" },
     { name: "Testimonials", link: "/" },
@@ -14,7 +14,11 @@ function Navbar() {
 
   let [open, setOpen] = useState(false);
   return (
-    <div className="w-full top-1 left-0">
+    <div
+      className="w-full top-1 left-0"
+      data-aos="fade-down"
+      data-aos-delay="1000"
+    >
       <nav className="md:flex items-center justify-between py-8 md:px-[9rem] px-7">
         <div>
           <img src={TRAFALGAR} alt="" />
@@ -31,18 +35,18 @@ function Navbar() {
           }`}
         >
           {Link1.map((link) => (
-            <li key={link.name} className="md:ml-8 text-lg md:my-0 my-7">
+            <li key={link.name} className="md:ml-8 text-base md:my-0 my-7">
               <a
                 href={link.link}
-                className="text-[#1F1534] font-semibold hover:text-gray-400"
+                className="text-[#1F1534] font-semibold hover:text-[#1F1534] hover:font-medium"
               >
                 {link.name}
               </a>
             </li>
           ))}
 
-          {Links.map((link) => (
-            <li key={link.name} className="md:ml-8 text-lg md:my-0 my-7">
+          {Link2.map((link) => (
+            <li key={link.name} className="md:ml-8 text-base md:my-0 my-7">
               <a
                 href={link.link}
                 className="text-[#7D7987] hover:text-[#1F1534] hover:font-medium"

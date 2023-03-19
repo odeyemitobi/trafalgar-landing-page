@@ -38,32 +38,68 @@ function Trafalgar() {
   return (
     <Mainlayout>
       <div className="w-full">
-        <img className="mt-[2.7%] absolute" src={ELEMENT} alt="" />
+        <img
+          className=" 2xl:h-[150px] lg:h-[115px] md:h-[80px] xs:h-[70px] mt-[2.7%] absolute"
+          data-aos="fade-down"
+          data-aos-delay="400"
+          src={ELEMENT}
+          alt=""
+        />
         <div className="w-full font-sans">
-          <div className="w-full justify-between flex px-[9rem]">
-            <div className="w-[40%] mt-[9rem] justify-between">
-              <h1 className="text-5xl font-semibold">
+          <div className="w-ful justify-between flex px-[9rem]">
+            <div className="w-full mr-auto mt-[11rem] 2xl:mt-[14rem] xl:mt-[10rem] md:mt-[7rem]">
+              <h1
+                className="w-full text-5xl 2xl:text-8xl xl:text-5xl lg:text-[40px] md:text-xl font-semibold"
+                data-aos="fade-down"
+                data-aos-delay="500"
+              >
                 Virtual healthcare for you
               </h1>
-              <p className=" w-[107%] mt-5 text-[21px] font-light leading-[32px]">
+              <p
+                className=" w-[105%] lg:w-full mt-5 text-[18px] 2xl:text-[50px] xl:text-[25px] lg:text-[19px] font-light leading-[32px] 2xl:leading-[65px] xl:leading-[38px]"
+                data-aos="fade-down"
+                data-aos-delay="600"
+              >
                 Trafalgar provides progressive, and affordable healthcare,
                 accessible on mobile and online for everyone
               </p>
-              <div className="mt-9">
+              <div className="mt-9" data-aos="fade-down" data-aos-delay="700">
                 <Consultbtn />
               </div>
             </div>
-            <div className="w-[50%] mt-[4rem]">
-              <img className="h-[100%] mr-auto" src={HEADER} alt="" />
+            <div
+              className="w-[150%] 2xl, xl:w-[150%] lg:w-[100%] mt-[4rem]"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <img
+                className="h-[30rem] 2xl:h-[50rem] lg:h-[25rem] bg-center bg-cover ml-auto"
+                src={HEADER}
+                alt=""
+              />
             </div>
           </div>
           <div className="w-full px-[9rem] mt-[11rem] mb-3 ">
             <div className="w-full text-center">
-              <h1 className="text-4xl font-semibold">Our services</h1>
-              <div className="w-[7%] mr-auto ml-auto mt-9">
+              <h1
+                className="text-4xl font-semibold"
+                data-aos="fade-down"
+                data-aos-delay="300"
+              >
+                Our services
+              </h1>
+              <div
+                className="w-[7%] mr-auto ml-auto mt-9"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <Underline />
               </div>
-              <p className="text-lg mt-[3rem]">
+              <p
+                className="text-lg mt-[3rem]"
+                data-aos="fade-right"
+                data-aos-delay="500"
+              >
                 We provide to you the best choices for you. Adjust it to your
                 health needs and make sure your undergo treatment with our
                 highly qualified doctors you can consult with us which type of
@@ -72,16 +108,28 @@ function Trafalgar() {
             </div>
           </div>
           <div className=" w-full mt-3 flex absolute">
-            <img className="w-[50%]" src={VECTOR} alt="" />
+            <img
+              className="w-[50%]"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              src={VECTOR}
+              alt=""
+            />
             <img
               className="w-[50%} h-[6rem] ml-auto mr-[9rem] mt-[16rem]"
+              data-aos="fade-right"
+              data-aos-delay="400"
               src={ELEMENT2}
               alt=""
             />
           </div>
           <div className="w-full mt-[4rem] px-[11rem] relative mb-5">
             <div className="flex justify-between">
-              <div className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl">
+              <div
+                className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              >
                 <img className="h-[5rem]" src={SEARCH} alt="" />
                 <h1 className=" text-2xl font-semibold mt-3">Search doctor</h1>
                 <p className="text-base mt-3">
@@ -89,7 +137,11 @@ function Trafalgar() {
                   trusted hospitals
                 </p>
               </div>
-              <div className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl">
+              <div
+                className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              >
                 <img className="h-[5rem]" src={MEDICINE} alt="" />
                 <h1 className=" text-2xl font-semibold mt-3">
                   Online pharmacy
@@ -99,7 +151,11 @@ function Trafalgar() {
                   trusted hospitals
                 </p>
               </div>
-              <div className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl">
+              <div
+                className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl"
+                data-aos="fade-left"
+                data-aos-delay="500"
+              >
                 <img className="h-[5rem]" src={CONTACTS} alt="" />
                 <h1 className=" text-2xl font-semibold mt-3">Consultation</h1>
                 <p className="text-base mt-3">
@@ -109,7 +165,11 @@ function Trafalgar() {
               </div>
             </div>
             <div className="flex mt-9 justify-between">
-              <div className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl">
+              <div
+                className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              >
                 <img className="h-[5rem]" src={DETAILS} alt="" />
                 <h1 className=" text-2xl font-semibold mt-3">Details info</h1>
                 <p className="text-base mt-3">
@@ -117,7 +177,11 @@ function Trafalgar() {
                   recomendations
                 </p>
               </div>
-              <div className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl">
+              <div
+                className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <img className="h-[5rem]" src={EMERGENCY} alt="" />
                 <h1 className=" text-2xl font-semibold mt-3">Emergency care</h1>
                 <p className="text-base mt-3">
@@ -125,7 +189,11 @@ function Trafalgar() {
                   your lovely family
                 </p>
               </div>
-              <div className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl">
+              <div
+                className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl"
+                data-aos="fade-left"
+                data-aos-delay="500"
+              >
                 <img className="h-[5rem]" src={RECORD} alt="" />
                 <h1 className=" text-2xl font-semibold mt-3">Tracking</h1>
                 <p className="text-base mt-3">
@@ -133,19 +201,31 @@ function Trafalgar() {
                 </p>
               </div>
             </div>
-            <div className="text-center mt-12">
+            <div
+              className="text-center mt-12"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <Learnbtn />
             </div>
           </div>
           <div className="w-full justify-between mt-[7rem] mb-5 flex pl-[5rem] pr-[9rem]">
-            <div className="w-[50%] mt-[6rem]">
+            <div
+              className="w-[50%] mt-[6rem]"
+              data-aos="fade-right"
+              data-aos-offset="400"
+            >
               <img
                 className=" h-[90%] w-[100%] ml-auto block mr-auto"
                 src={HEADER2}
                 alt=""
               />
             </div>
-            <div className="w-[40%] mt-[9rem] mb-[4rem] justify-between">
+            <div
+              className="w-[40%] mt-[9rem] mb-[4rem] justify-between"
+              data-aos="fade-left"
+              data-aos-offset="300"
+            >
               <h1 className="text-5xl font-semibold">
                 Leading healthcare providers
               </h1>
@@ -162,11 +242,19 @@ function Trafalgar() {
               </div>
             </div>
           </div>
-          <div className="w-full absolute">
+          <div
+            className="w-full absolute"
+            data-aos="fade-left"
+            data-aos-offset="400"
+          >
             <img className="ml-auto" src={ELEMENT3} alt="" />
           </div>
           <div className="w-full justify-between mt-[7rem] mb-5 flex pl-[11rem] pr-[9rem]">
-            <div className="w-[100%] mt-[9rem] mb-[4rem] justify-between">
+            <div
+              className="w-[100%] mt-[9rem] mb-[4rem] justify-between"
+              data-aos="fade-right"
+              data-aos-offset="300"
+            >
               <h1 className="text-5xl font-semibold">
                 Download our mobile apps
               </h1>
@@ -182,7 +270,11 @@ function Trafalgar() {
                 <Downloadbtn />
               </div>
             </div>
-            <div className="w-[100%] mt-[9rem]">
+            <div
+              className="w-[100%] mt-[9rem]"
+              data-aos="fade-left"
+              data-aos-offset="400"
+            >
               <img
                 className=" h-[90%] w-full ml-auto block mr-auto"
                 src={HEADER3}
@@ -190,10 +282,18 @@ function Trafalgar() {
               />
             </div>
           </div>
-          <div className="w-full mb-3 px-[7rem] mt-[25rem] absolute">
+          <div
+            className="w-full mb-3 px-[7rem] mt-[25rem] absolute"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             <img className="h-18" src={ELEMENT4} alt="" />
           </div>
-          <div className="pl-[10.5rem] pr-[12rem] mb-5 relative w-full mt-[10rem]">
+          <div
+            className="pl-[10.5rem] pr-[12rem] mb-5 relative w-full mt-[10rem]"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div className="w-[100%] ed rounded-2xl text-center">
               <img
                 className="ml-auto h-[4rem] block relative"
@@ -233,10 +333,18 @@ function Trafalgar() {
               <img className="ml-auto mr-auto mt-9" src={SLIDER} alt="" />
             </div>
           </div>
-          <div className="w-full absolute">
+          <div
+            className="w-full absolute"
+            data-aos="fade-up"
+            data-aos-offset="300"
+          >
             <img className="pl-[8rem] mt-[16rem]" src={ELEMENT6} alt="" />
           </div>
-          <div className="w-full absolute">
+          <div
+            className="w-full absolute"
+            data-aos="fade-down"
+            data-aos-offset="400"
+          >
             <img
               className="ml-auto h-[26rem] mt-[16rem]"
               src={VECTOR2}
@@ -244,7 +352,11 @@ function Trafalgar() {
             />
           </div>
           <div className="w-full px-[11rem] mt-[11rem] relative">
-            <div className="w-full text-center">
+            <div
+              className="w-full text-center"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
               <div className="text-4xl font-semibold">
                 <h1>Check out our latest article</h1>
               </div>
@@ -253,7 +365,11 @@ function Trafalgar() {
               </div>
             </div>
             <div className="w-full mt-[4rem] mb-9 flex justify-between">
-              <div className="w-[30%] cursor-pointer text-left rounded-2xl bg-[#fff] shadow-xl hover:shadow-2xl">
+              <div
+                className="w-[30%] cursor-pointer text-left rounded-2xl bg-[#fff] shadow-xl hover:shadow-2xl"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              >
                 <img
                   className="w-[100%] rounded-t-xl bg-center bg-cover"
                   src={DISEASE}
@@ -277,7 +393,11 @@ function Trafalgar() {
                   </div>
                 </div>
               </div>
-              <div className="w-[30%] cursor-pointer text-left rounded-2xl bg-[#fff] shadow-xl hover:shadow-2xl">
+              <div
+                className="w-[30%] cursor-pointer text-left rounded-2xl bg-[#fff] shadow-xl hover:shadow-2xl"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              >
                 <img
                   className="w-[100%] rounded-t-xl bg-center bg-cover"
                   src={HERBAL}
@@ -301,7 +421,11 @@ function Trafalgar() {
                   </div>
                 </div>
               </div>
-              <div className="w-[30%] cursor-pointer text-left rounded-2xl bg-[#fff] shadow-xl hover:shadow-2xl">
+              <div
+                className="w-[30%] cursor-pointer text-left rounded-2xl bg-[#fff] shadow-xl hover:shadow-2xl"
+                data-aos="fade-left"
+                data-aos-delay="500"
+              >
                 <img
                   className="w-[100%] rounded-t-xl bg-center bg-cover"
                   src={SKIN}
@@ -326,16 +450,30 @@ function Trafalgar() {
                 </div>
               </div>
             </div>
-            <div className="text-center mb-5">
+            <div
+              className="text-center mb-5"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <Viewbtn />
             </div>
           </div>
-          <div className="w-full absolute mt-[5rem] px-[3rem]">
+          <div
+            className="w-full absolute mt-[5rem] px-[3rem]"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="300"
+          >
             <img className="ml-auto" src={ELEMENT7} alt="" />
           </div>
-          <div className="w-full mt-[11rem] relative ed">
+          <div className="w-full mt-[11rem] relative ed lg:flex-row lg:items-start lg:text-left lg:justify-between">
             <div className="w-full px-[9rem] pt-[5rem] justify-between flex">
-              <div className=" w-[50%]">
+              <div
+                className=" w-[50%]"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="300"
+              >
                 <div className="w-full">
                   <div className="w-full flex">
                     <div className="">
@@ -366,7 +504,12 @@ function Trafalgar() {
                 </div>
               </div>
               <div className="w-[50%] flex justify-between">
-                <div className="w-full">
+                <div
+                  className="w-full"
+                  data-aos="fade-up"
+                  data-aos-offset="200"
+                  data-aos-delay="500"
+                >
                   <div className="w-full text-white">
                     <h1 className="font-semibold">Company</h1>
                     <div className="mt-5 text-sm leading-8">
@@ -377,7 +520,12 @@ function Trafalgar() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full">
+                <div
+                  className="w-full"
+                  data-aos="fade-up"
+                  data-aos-offset="200"
+                  data-aos-delay="700"
+                >
                   <div className="w-full text-white">
                     <h1 className="font-semibold">Region</h1>
                     <div className="mt-5 text-sm leading-8">
@@ -388,7 +536,12 @@ function Trafalgar() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full">
+                <div
+                  className="w-full"
+                  data-aos="fade-up"
+                  data-aos-offset="200"
+                  data-aos-delay="900"
+                >
                   <div className="w-full text-white">
                     <h1 className="font-semibold">Help</h1>
                     <div className="mt-5 text-sm leading-8">
@@ -401,7 +554,12 @@ function Trafalgar() {
                 </div>
               </div>
             </div>
-            <div className="mt-7">
+            <div
+              className="mt-7"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="300"
+            >
               <img className="h-[4rem]" src={ELEMENT8} alt="" />
             </div>
           </div>
