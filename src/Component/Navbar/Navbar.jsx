@@ -1,62 +1,66 @@
 import React, { useState } from "react";
 import "../component.css";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import TRAFALGAR from "../../Assets/img/Trafalgar.png";
 
 function Navbar() {
-  let Link1 = [{ name: "Home", link: "/" }];
+  const [nav, setNav] = useState(false);
 
-  let Link2 = [
-    { name: "Find a doctor", link: "/" },
-    { name: "Apps", link: "/" },
-    { name: "Testimonials", link: "/" },
-    { name: "About us", link: "/" },
-  ];
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
-  let [open, setOpen] = useState(false);
   return (
     <div
-      className="w-full top-1 left-0"
+      className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-[9rem]"
       data-aos="fade-down"
       data-aos-delay="1000"
     >
-      <nav className="md:flex items-center justify-between py-8 md:px-[9rem] px-7">
-        <div>
+      <div>
+        <img src={TRAFALGAR} alt="" />
+      </div>
+      <ul className="hidden md:flex cursor-pointer">
+        <li className="p-4 text-[#1F1534] font-semibold">Home</li>
+        <li className="p-4 text-[#7D7987] hover:text-[#1F1534] hover:font-semibold">
+          Find a doctor
+        </li>
+        <li className="p-4 text-[#7D7987] hover:text-[#1F1534] hover:font-semibold">
+          Apps
+        </li>
+        <li className="p-4 text-[#7D7987] hover:text-[#1F1534] hover:font-semibold">
+          Testimonials
+        </li>
+        <li className="p-4 text-[#7D7987] hover:text-[#1F1534] hover:font-semibold">
+          About us
+        </li>
+      </ul>
+      <div onClick={handleNav} className="block md:hidden">
+        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+      </div>
+      <ul
+        className={
+          nav
+            ? "fixed left-0 top-0 w-[75%] h-full border-r border-r-gray-900 nat ease-in-out duration-500"
+            : "ease-in-out duration-500 fixed left-[-100%]"
+        }
+      >
+        <div className="m-4">
           <img src={TRAFALGAR} alt="" />
         </div>
-        <div
-          onClick={() => setOpen(!open)}
-          className="text-3xl absolute text-[#458FF6] right-8 top-11 cursor-pointer md:hidden"
-        >
-          <ion-icon name={open ? "close" : "menu"}></ion-icon>
-        </div>
-        <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-20, bg-[rgb(69,143,246)]  " : "top-[-490px]"
-          }`}
-        >
-          {Link1.map((link) => (
-            <li key={link.name} className="md:ml-8 text-base md:my-0 my-7">
-              <a
-                href={link.link}
-                className="text-[#1F1534] font-semibold hover:text-[#1F1534] hover:font-medium"
-              >
-                {link.name}
-              </a>
-            </li>
-          ))}
-
-          {Link2.map((link) => (
-            <li key={link.name} className="md:ml-8 text-base md:my-0 my-7">
-              <a
-                href={link.link}
-                className="text-[#7D7987] hover:text-[#1F1534] hover:font-medium"
-              >
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+        <li className="p-4 text-[#1F1534] font-semibold">Home</li>
+        <li className="p-4  text-[#7D7987] hover:text-[#1F1534] hover:font-semibold">
+          Find a doctor
+        </li>
+        <li className="p-4 text-[#7D7987] hover:text-[#1F1534] hover:font-semibold">
+          Apps
+        </li>
+        <li className="p-4 text-[#7D7987] hover:text-[#1F1534] hover:font-semibold">
+          Testimonials
+        </li>
+        <li className="p-4 text-[#7D7987] hover:text-[#1F1534] hover:font-semibold">
+          About us
+        </li>
+      </ul>
     </div>
   );
 }
