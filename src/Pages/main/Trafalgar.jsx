@@ -46,7 +46,7 @@ function Trafalgar() {
           alt=""
         />
         <div className="w-full font-sans">
-          <div className="w-ful justify-between flex px-[9rem]">
+          <div className="w-ful justify-between flex md:px-[9rem] px-7">
             <div
               className="w-full mr-auto mt-[11rem]"
               data-aos="fade-down"
@@ -75,7 +75,7 @@ function Trafalgar() {
               />
             </div>
           </div>
-          <div className="w-full px-[9rem] mt-[11rem] mb-3 ">
+          <div className="w-full md:px-[9rem] px-7 mt-[11rem] mb-3 ">
             <div className="w-full text-center">
               <h1
                 className="text-4xl font-semibold"
@@ -119,7 +119,7 @@ function Trafalgar() {
               alt=""
             />
           </div>
-          <div className="w-full mt-[4rem] px-[11rem] relative mb-5">
+          <div className="w-full mt-[4rem] md:px-[11rem] px-5 relative mb-5">
             <div className="flex justify-between">
               <div
                 className="w-[30%] cursor-pointer text-left rounded-2xl px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl"
@@ -205,7 +205,7 @@ function Trafalgar() {
               <Learnbtn />
             </div>
           </div>
-          <div className="w-full justify-between mt-[7rem] mb-5 flex pl-[5rem] pr-[9rem]">
+          <div className="w-full justify-between mt-[7rem] mb-5 flex md:pl-[5rem] pl-[2rem] md:pr-[9rem] pr-[3rem]">
             <div
               className="w-[50%] mt-[6rem]"
               data-aos="fade-right"
@@ -245,7 +245,7 @@ function Trafalgar() {
           >
             <img className="ml-auto" src={ELEMENT3} alt="" />
           </div>
-          <div className="w-full justify-between mt-[7rem] mb-5 flex pl-[11rem] pr-[9rem]">
+          <div className="w-full justify-between mt-[7rem] mb-5 flex md:pl-[11rem] pl-[2rem] md:pr-[9rem] pr-[3rem]">
             <div
               className="w-[100%] mt-[9rem] mb-[4rem] justify-between"
               data-aos="fade-right"
@@ -286,7 +286,7 @@ function Trafalgar() {
             <img className="h-18" src={ELEMENT4} alt="" />
           </div>
           <div
-            className="pl-[10.5rem] pr-[12rem] mb-5 relative w-full mt-[10rem]"
+            className="md:pl-[10.5rem] pl-[2rem] md:pr-[12rem] pr-[2.5rem] mb-5 relative w-full mt-[10rem]"
             data-aos="fade-left"
             data-aos-offset="400"
             data-aos-delay="400"
@@ -348,7 +348,7 @@ function Trafalgar() {
               alt=""
             />
           </div>
-          <div className="w-full px-[11rem] mt-[11rem] relative">
+          <div className="w-full md:px-[11rem] px-5 mt-[11rem] relative">
             <div
               className="w-full text-center"
               data-aos="fade-down"
@@ -464,7 +464,7 @@ function Trafalgar() {
             <img className="ml-auto" src={ELEMENT7} alt="" />
           </div>
           <div className="w-full mt-[11rem] relative ed">
-            <div className="w-full px-[9rem] pt-[5rem] justify-between flex">
+            <div className="w-full md:px-[9rem] px-3 pt-[5rem] justify-between flex">
               <div
                 className=" w-[50%]"
                 data-aos="fade-up"
