@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <div
-      className="flex justify-between items-center h-24 max-w-[1240px] mx-auto md:px-[9rem] px-7"
+      className="flex justify-between items-center h-24 max-w-[1240px] mx-auto md:px-[9rem] px-12"
       data-aos="fade-down"
       data-aos-delay="1000"
     >
