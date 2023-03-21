@@ -164,7 +164,7 @@ function Trafalgar() {
                 </p>
               </div>
             </div>
-            <div className="md:flex sm:flex block md:justify-between sm:justify-between center">
+            <div className="md:flex sm:flex block md:justify-between sm:justify-between justify-center md:mt-9 sm:mt-[-2rem]">
               <div
                 className="md:w-[30%] sm:w-[30%] w-full cursor-pointer text-left rounded-2xl md:mb-0 mb-16 px-5 py-7 bg-[#fff] shadow-xl hover:shadow-2xl"
                 data-aos="fade-right"
